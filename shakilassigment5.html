@@ -26,35 +26,19 @@
 
     <!-- Action Buttons -->
     <div class="flex flex-wrap justify-center sm:justify-end gap-3">
-      <button class="btn flex items-center gap-1">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
-          viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" 
-          class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" 
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 
-            0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 
-            3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 
-            9-12Z" />
-        </svg>
-        Like
+
+      <button class="btn flex items-center gap-4 rounded-2xl bg-[#F5FFF6] w-[92px]">
+        <p class="text-lg">0 <span><i class="fa-regular fa-heart"></i></span> </p>
       </button>
 
-      <button class="btn flex items-center gap-1">
-        Like
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
-          viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" 
-          class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round" 
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 
-            0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 
-            3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 
-            9-12Z" />
-        </svg>
+      <button class="btn flex items-center  rounded-2xl bg-[#F5FFF6] w-[92px]">
+        <p class="text-lg">0 <span><i class="fa-regular fa-star" ></i></span> </p>
       </button>
 
-      <div class="join">
-        <input class="join-item btn" type="radio" name="options" aria-label="2 copy " />
-      </div>
+      <button class="btn flex items-center rounded-2xl bg-[#F5FFF6] w-[152px]">
+        <p class="text-lg">2 <span> Cppy </span> </p>
+      </button>
+
     </div>
   </div>
 </header>
@@ -87,11 +71,13 @@
   <!-- Main Section -->
   <section class="col-span-1 lg:col-span-9">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<!-- Card 1 -->
  <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/emergency.png" />
-          <span><i class="fa-regular fa-heart"></i></span>
+          <span id="card-1-love" ><i class="fa-regular fa-heart"></i></span>
         </div>
         <div class="mt-3">
           <p class="text-xl font-bold">National Emergency Number</p>
@@ -156,7 +142,7 @@
 </div>
       </div>
 
-      <!-- Card 1 -->
+      <!-- Card 4 -->
  <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/emergency.png" />
@@ -178,7 +164,7 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- Card 5 -->
       <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/police.png" />
@@ -200,7 +186,7 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
+      <!-- Card 6 -->
       <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/fire-service.png" />
@@ -225,7 +211,7 @@
 </div>
       </div>
 
-      <!-- Card 1 -->
+      <!-- Card 7 -->
       <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/emergency.png" />
@@ -247,7 +233,7 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
+      <!-- Card 8 -->
       <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/police.png" />
@@ -269,7 +255,7 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
+      <!-- Card 9 -->
       <div class="h-[375px] rounded-xl bg-white p-6 flex flex-col justify-between">
         <div class="flex items-center justify-between">
           <img class="h-[60px] w-[60px] rounded-full bg-[#FFE3E2] p-2" src="./imagess/fire-service.png" />
@@ -294,8 +280,7 @@
 </div>
       </div>
 
-      <!-- Remaining cards (duplicate same structure for responsiveness) -->
-      <!-- Just copy the above structure for all other cards -->
+
       
     </div>
   </section>
@@ -308,7 +293,7 @@
         <button class="btn bg-green-600 text-lg rounded-lg">Clear</button>
       </div>
 
-      <!-- Call History Items -->
+      
       <div class="space-y-4 mt-4">
         <div class="bg-[#F2F2F2] flex items-center justify-between p-2 rounded-lg">
           <div>
@@ -363,7 +348,6 @@
   </aside>
 </main>
 
-
-
+<script src="./shakilassigment5.js"></script>
 </body>
 </html>
